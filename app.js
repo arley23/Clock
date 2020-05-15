@@ -21,4 +21,3 @@ if (secs < 10) {
 }
 
 setInterval(clock, 100);
-console.log(clock)
