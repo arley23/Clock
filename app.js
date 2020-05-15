@@ -1,8 +1,8 @@
 function clock() {
     const fullDate = new Date();
-    var hours = fullDate.getHours();
-    var mins = fullDate.getMinutes();
-    var secs = fullDate.getseconds();
+    let hours = fullDate.getHours();
+    let mins = fullDate.getMinutes();
+    let secs = fullDate.getSeconds();
 
 if (hours < 10) {
     hours = "0" + hours;
@@ -16,8 +16,9 @@ if (secs < 10) {
 }
 
     document.getElementById('hour').innerHTML = hours;
-    document.getElementById('minute').innerHTML = ":" + mins;
-    document.getElementById('second').innerHTML = ":" + secs;
+    document.getElementById('minute').innerHTML = ":" + " " + mins;
+    document.getElementById('second').innerHTML = ":" + " " + secs;
 }
 
 setInterval(clock, 100);
+console.log(clock)
